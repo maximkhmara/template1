@@ -1,0 +1,98 @@
+.header {
+  width: 100%;
+  padding: 13px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+  &.scroll {
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+  }
+}
+.header-logo {
+  width: 5.902778vw; /* 85/1440 */
+  img {
+    width: 100%;
+  }
+}
+.header-menu {
+  display: flex;
+  align-items: center;
+}
+.header-menu-item {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 0.972222vw; /* 14/1440 */
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.28px;
+  text-transform: uppercase;
+  display: block;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.header-menu-item-separator {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 0.972222vw; /* 14/1440 */
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.28px;
+  text-transform: uppercase;
+  margin: 0 5px;
+}
+.header-lang {
+  display: flex;
+  align-items: center;
+}
+.header-lang-item {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Montserrat;
+  font-size: 0.972222vw; /* 14/1440 */
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.28px;
+  text-transform: uppercase;
+  display: block;
+  &.active {
+    color: #fff;
+  }
+}
+.header-lang-separator {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 0.972222vw; /* 14/1440 */
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.28px;
+  text-transform: uppercase;
+  margin: 0 5px;
+}
+.header-booking-btn {
+  cursor: pointer;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 0.972222vw; /* 14/1440 */
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  padding: 0.833333vw 1.388889vw; /* 12/1440 */
+  border-radius: 30px;
+  border: 1px solid var(--white, #fff);
+  &:hover {
+    background: #fff;
+    color: #000;
+  }
+}

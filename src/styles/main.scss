@@ -1,0 +1,39 @@
+@import "components/_reset";
+@import "components/_fonts";
+@import "components/_mixins";
+@import "components/_helpers";
+
+@import "components/_modal";
+@import "components/_menu";
+@import "components/_header";
+@import "components/_footer";
+
+@import "pages/_index";
+
+html,
+body {
+  font-family: Montserrat;
+  font-weight: 400;
+  background: #fff;
+  &.is-hidden {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: bottom;
+}

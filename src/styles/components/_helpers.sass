@@ -1,0 +1,70 @@
+@use 'sass:math'
+
+@function em($size, $context: 16)
+  @return ($size/$context) * 1em
+
+@function img-url($image)
+  @return url('../img/#{$image}')
+
+@function vw($px-vw, $base-vw: 1920px)
+  @return math.div($px-vw * 100vw, $base-vw)
+
+=image($image)
+  background-image: img-url($image)
+
+=trans($what: all, $dur: 0.2s, $easing: ease)
+  transition: $what $dur $easing
+
+=smooth-scroll
+  -webkit-overflow-scrolling: touch
+
+=smooth-font
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+=gpu
+  transform: translate3d(0,0,0)
+
+=xxl
+  +r(1560)
+    @content
+
+=xl
+  +r(1200)
+    @content
+
+=md
+  +r(1024)
+    @content
+
+=tablet
+  +r(767)
+    @content
+
+=sm
+  +r(666)
+    @content
+
+=xs
+  +r(599)
+    @content
+
+=xxs
+  +r(359)
+    @content
+
+=xsUp
+  +rmin(600)
+    @content
+
+=smUp
+  +rmin(667)
+    @content
+
+=tabletUp
+  +rmin(768)
+    @content
+
+=mdUp
+  +rmin(1025)
+    @content

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    {% include './components/_page-head.html' %}
+  </head>
+
+  <body class="{{ body_class }}">
+    <div class="fluid-wrapper">
+      <div class="menu-overlay"></div>
+
+      {% include './components/_menu.html' %} {% include
+      './modals/_news-popup.html' %} {% block content %} {% endblock %}
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="./js/main.js"></script>
+
+    {# Then add any custom js or explicitely for page #} {% block footer_scripts
+    %} {% endblock %}
+  </body>
+</html>

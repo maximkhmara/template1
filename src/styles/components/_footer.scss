@@ -1,0 +1,38 @@
+.footer {
+  width: 100%;
+  padding: 40px 100px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  background: var(--black, #000);
+}
+.footer-left {
+}
+.footer-left-link {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 20px;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.footer-center {
+}
+.footer-logo {
+}
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  a {
+    display: block;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
